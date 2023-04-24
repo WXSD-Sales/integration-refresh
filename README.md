@@ -1,4 +1,6 @@
-# Getting Started
+# Integration Refresh (Python)
+
+## Getting Started
 First, you will need to create an app (create an integration) here:
 https://developer.webex.com/my-apps
 
@@ -13,7 +15,9 @@ https://developer.webex.com/my-apps
 
    c. Scroll to the bottom and click Add Integration.
 
-# Running the Code
+## Setup
+
+### Prerequisites & Dependencies: 
 Requirements:
 1. python 3.7.4 or higher
 2. pip install tornado==4.5.2
@@ -26,7 +30,7 @@ Running the App from the terminal:<br>
 ``>>>username$ python app.py --debug``
 
 
-# About the App
+## About the App
 Once the app is running...
 1. Navigate to https://localhost:8000/oauth in your browser (your redirect_uri, which should end in oauth for this demo).
 2. Sign into your integration with a valid Webex Teams account.<br>
@@ -37,7 +41,18 @@ Once the app is running...
       Tokens refreshed more than once every 24 hours will often leave the value, including the expire time, unchanged.<br>
       This essentially means that a token can only be truly refreshed at most once daily.<br>
 
-# Developer Info
+## Developer Info
 1. In the token_helper.py file is a commented explanation about how to test the refresh right at app start.
 2. This demo prints sensitive information like access tokens to the terminal.  This is not advised for a real application.
 3. This demo stores tokens in app memory, which is not helpful if the application is restarted.  For this reason, a database would be recommended instead.
+
+## License
+All contents are licensed under the MIT license. Please see [license](LICENSE) for details.
+
+
+## Disclaimer
+<!-- Keep the following here -->  
+ Everything included is for demo and Proof of Concept purposes only. Use of the site is solely at your own risk. This site may contain links to third party content, which we do not warrant, endorse, or assume liability for. These demos are for Cisco Webex usecases, but are not Official Cisco Webex Branded demos.
+ 
+## Questions
+Please contact the WXSD team at [wxsd@external.cisco.com](mailto:wxsd@external.cisco.com?subject=RepoName) for questions. Or, if you're a Cisco internal employee, reach out to us on the Webex App via our bot (globalexpert@webex.bot). In the "Engagement Type" field, choose the "API/SDK Proof of Concept Integration Development" option to make sure you reach our team. 
